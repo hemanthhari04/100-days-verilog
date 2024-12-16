@@ -1,0 +1,27 @@
+💡 100 Days of Verilog 🚀
+Welcome to the 100 Days of Verilog Challenge!
+
+This repository is a part of my journey to master Verilog HDL (Hardware Description Language), focusing on designing and simulating digital circuits over a span of 100 days.
+
+📚 What You’ll Find Here
+Day-by-Day Progress: Daily implementations, from basic gates to advanced digital designs.
+Code Examples: Verilog code for various projects and modules.
+Simulations: Testbench files and waveforms to validate each design.
+Learning Notes: Key concepts, challenges, and insights gained along the way.
+🛠️ Topics Covered
+Combinational and Sequential Logic Design
+Adders, Subtractors, Multiplexers, Decoders
+FSMs (Finite State Machines)
+Ripple Carry Adders and Arithmetic Circuits
+Memory Elements and Timing Analysis
+Advanced Design Projects
+🔗 Why This Challenge?
+The goal of this challenge is to build a strong foundation in Verilog, develop a structured workflow, and contribute to meaningful projects in VLSI and digital design.
+
+🤝 Get Involved
+Feedback: Suggestions and improvements are always welcome!
+Collaborate: Feel free to fork and contribute to this journey.
+Discuss: Open an issue to discuss ideas or ask questions.
+🌟 Let’s Connect
+If you find this journey interesting or have suggestions, connect with me on LinkedIn or drop a message. Let’s grow together!
+
