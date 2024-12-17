@@ -1,0 +1,25 @@
+module arithmetic_operations(
+    input wire [3:0] a, b,      // 4-bit inputs
+    output wire [4:0] sum,      // 5-bit output for addition (to handle carry)
+    output wire [3:0] diff,     // 4-bit output for subtraction
+    output wire [7:0] product,  // 8-bit output for multiplication
+    output wire [3:0] quotient, // 4-bit output for division
+    output wire [3:0] remainder // 4-bit output for modulo operation
+);
+
+    // Addition
+    assign sum = a + b;
+
+    // Subtraction
+    assign diff = a - b;
+
+    // Multiplication
+    assign product = a * b;
+
+    // Division
+    assign quotient = a / b;
+
+    // Modulo Operation
+    assign remainder = a % b;
+
+endmodule

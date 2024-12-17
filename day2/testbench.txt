@@ -1,0 +1,46 @@
+module arithmetic_operations_tb;
+
+    // Testbench inputs
+    reg [3:0] a, b;
+
+    // Outputs
+    wire [4:0] sum;
+    wire [3:0] diff, quotient, remainder;
+    wire [7:0] product;
+
+    // Instantiate the arithmetic operations module
+    arithmetic_operations uut (
+        .a(a),
+        .b(b),
+        .sum(sum),
+        .diff(diff),
+        .product(product),
+        .quotient(quotient),
+        .remainder(remainder)
+    );
+
+    // Testbench logic
+    initial begin
+        // Monitor output dynamically
+        $monitor("Time=%0d | a=%d b=%d | SUM=%d DIFF=%d PRODUCT=%d QUOTIENT=%d REMAINDER=%d", 
+                 $time, a, b, sum, diff, product, quotient, remainder);
+
+        // Test case 1
+        a = 4'b0011; b = 4'b0001; #10;  // a=3, b=1
+
+        // Test case 2
+        a = 4'b0101; b = 4'b0010; #10;  // a=5, b=2
+
+        // Test case 3
+        a = 4'b1001; b = 4'b0011; #10;  // a=9, b=3
+
+        // Test case 4
+        a = 4'b0110; b = 4'b0101; #10;  // a=6, b=5
+
+        // Test case 5: Division by zero (optional handling)
+        a = 4'b0110; b = 4'b0000; #10;  // a=6, b=0
+
+        // End simulation
+        $finish;
+    end
+endmodule
