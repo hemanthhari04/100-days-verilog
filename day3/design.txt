@@ -1,0 +1,18 @@
+// Code your design here
+module xor_gate (
+    input a,      // First input
+    input b,      // Second input
+    output y      // XOR output
+);
+    wire not_a, not_b;  // Wires for inverted inputs
+    wire and1, and2;    // Wires for intermediate AND outputs
+
+    // Logic
+    not (not_a, a);      // NOT gate for 'a'
+    not (not_b, b);      // NOT gate for 'b'
+    and (and1, not_a, b); // AND gate for NOT(a) and b
+    and (and2, a, not_b); // AND gate for a and NOT(b)
+    or  (y, and1, and2);  // OR gate for the two AND outputs
+
+endmodule
+
