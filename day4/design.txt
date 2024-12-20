@@ -1,0 +1,17 @@
+
+module xnor_gate (
+    input a,      
+    input b,      
+    output y      
+);
+    wire not_a, not_b; 
+    wire and1, and2;    
+    wire xor_result;    
+    not (not_a, a);      
+    not (not_b, b);      
+    and (and1, not_a, b); 
+    and (and2, a, not_b); 
+    or  (xor_result, and1, and2); 
+    not (y, xor_result); 
+
+endmodule
