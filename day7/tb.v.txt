@@ -1,0 +1,26 @@
+module mux4to1_tb;
+    reg [3:0] in;
+    reg [1:0] sel;
+    wire y;
+
+    mux4to1 uut (
+        .in(in),
+        .sel(sel),
+        .y(y)
+    );
+
+    initial begin
+        $monitor("in = %b, sel = %b, y = %b", in, sel, y);
+
+        in = 4'b0001; sel = 2'b00; #10; // Test case 1
+        in = 4'b0010; sel = 2'b01; #10; // Test case 2
+        in = 4'b0100; sel = 2'b10; #10; // Test case 3
+        in = 4'b1000; sel = 2'b11; #10; // Test case 4
+        in = 4'b1111; sel = 2'b00; #10; // Test case 5
+        in = 4'b1111; sel = 2'b01; #10; // Test case 6
+        in = 4'b1111; sel = 2'b10; #10; // Test case 7
+        in = 4'b1111; sel = 2'b11; #10; // Test case 8
+
+        $finish;
+    end
+endmodule
