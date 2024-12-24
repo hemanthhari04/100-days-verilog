@@ -1,0 +1,27 @@
+
+module mux8to1_tb;
+    reg [7:0] in;
+    reg [2:0] sel;
+    wire y;
+
+    mux8to1 uut (
+        .in(in),
+        .sel(sel),
+        .y(y)
+    );
+
+    initial begin
+        $monitor("in = %b, sel = %b, y = %b", in, sel, y);
+
+        in = 8'b00000001; sel = 3'b000; #10;
+        in = 8'b00000010; sel = 3'b001; #10;
+        in = 8'b00000100; sel = 3'b010; #10;
+        in = 8'b00001000; sel = 3'b011; #10;
+        in = 8'b00010000; sel = 3'b100; #10;
+        in = 8'b00100000; sel = 3'b101; #10;
+        in = 8'b01000000; sel = 3'b110; #10;
+        in = 8'b10000000; sel = 3'b111; #10;
+
+        $finish;
+    end
+endmodule
