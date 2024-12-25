@@ -1,0 +1,39 @@
+module mux2to1(
+    input a,
+    input b,
+    input sel,
+    output y
+);
+    assign y = sel ? b : a;
+endmodule
+
+module mux16to1(
+    input [15:0] in,
+    input [3:0] sel,
+    output y
+);
+    wire y0, y1, y2, y3, y4, y5, y6, y7;
+
+    mux2to1 mux1(.a(in[0]), .b(in[1]), .sel(sel[0]), .y(y0));
+    mux2to1 mux2(.a(in[2]), .b(in[3]), .sel(sel[0]), .y(y1));
+    mux2to1 mux3(.a(in[4]), .b(in[5]), .sel(sel[0]), .y(y2));
+    mux2to1 mux4(.a(in[6]), .b(in[7]), .sel(sel[0]), .y(y3));
+    mux2to1 mux5(.a(in[8]), .b(in[9]), .sel(sel[0]), .y(y4));
+    mux2to1 mux6(.a(in[10]), .b(in[11]), .sel(sel[0]), .y(y5));
+    mux2to1 mux7(.a(in[12]), .b(in[13]), .sel(sel[0]), .y(y6));
+    mux2to1 mux8(.a(in[14]), .b(in[15]), .sel(sel[0]), .y(y7));
+
+    wire y8, y9, y10, y11;
+
+    mux2to1 mux9(.a(y0), .b(y1), .sel(sel[1]), .y(y8));
+    mux2to1 mux10(.a(y2), .b(y3), .sel(sel[1]), .y(y9));
+    mux2to1 mux11(.a(y4), .b(y5), .sel(sel[1]), .y(y10));
+    mux2to1 mux12(.a(y6), .b(y7), .sel(sel[1]), .y(y11));
+
+    wire y12, y13;
+
+    mux2to1 mux13(.a(y8), .b(y9), .sel(sel[2]), .y(y12));
+    mux2to1 mux14(.a(y10), .b(y11), .sel(sel[2]), .y(y13));
+
+    mux2to1 mux15(.a(y12), .b(y13), .sel(sel[3]), .y(y));
+endmodule
