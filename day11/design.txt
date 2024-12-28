@@ -1,0 +1,8 @@
+module decoder1to2(
+    input en,
+    input a,
+    output [1:0] y
+);
+    assign y[0] = en & ~a;
+    assign y[1] = en & a;
+endmodule

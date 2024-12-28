@@ -1,0 +1,21 @@
+module decoder1to2_tb;
+    reg en;
+    reg a;
+    wire [1:0] y;
+
+    decoder1to2 U1(
+        .en(en),
+        .a(a),
+        .y(y)
+    );
+	
+ 
+    initial begin
+       $dumpvars(0,decoder1to2_tb);
+        en = 0; a = 0; #10;
+        en = 0; a = 1; #10;
+        en = 1; a = 0; #10;
+        en = 1; a = 1; #10;
+        
+    end
+endmodule
