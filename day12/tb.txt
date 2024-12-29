@@ -1,0 +1,21 @@
+module decoder2to4_tb;
+    reg en;
+    reg [1:0] a;
+    wire [3:0] y;
+    decoder2to4 UUT (
+        .en(en),
+        .a(a),
+        .y(y)
+    );
+    initial begin
+      $monitor("e=%b a=%b  y=%b",en,a,y); 
+        en = 0; a = 2'b00; #10;
+        en = 0; a = 2'b01; #10;
+        en = 0; a = 2'b10; #10;
+        en = 0; a = 2'b11; #10;   
+        en = 1; a = 2'b00; #10;
+        en = 1; a = 2'b01; #10;
+        en = 1; a = 2'b10; #10;
+        en = 1; a = 2'b11; #10;
+    end
+endmodule
