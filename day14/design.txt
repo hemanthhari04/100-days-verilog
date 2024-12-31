@@ -1,0 +1,16 @@
+module decoder4to16(
+    input en,
+    input [3:0] a,
+    output reg [15:0] y
+);
+    integer i;
+    always @(*) begin
+        if (en) begin
+            for (i = 0; i < 16; i = i + 1) begin
+                y[i] = (a == i);
+            end
+        end else begin
+            y = 16'b0;
+        end
+    end
+endmodule
