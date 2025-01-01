@@ -1,0 +1,30 @@
+module decoder6to32_tb;
+    reg en;
+  reg [4:0] a;
+  wire [31:0] y;
+
+    decoder5to32 UUT (
+        .en(en),
+        .a(a),
+        .y(y)
+    );
+
+    integer i;
+
+    initial begin
+      $monitor("en=%b  a=%b y=%b",en,a,y);
+        en = 0;
+      for (i = 0; i < 32; i = i + 1) begin
+            a = i;
+            #10;
+        end
+
+        en = 1;
+      for (i = 0; i < 32; i = i + 1) begin
+            a = i;
+            #10;
+        end
+
+        $stop;
+    end
+endmodule

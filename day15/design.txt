@@ -1,0 +1,17 @@
+module decoder5to32(
+    input en,
+  input [4:0] a,
+  output reg [31:0] y
+);
+    integer i;
+    always @(*) begin
+        if (en) begin
+          for (i = 0; i < 32; i = i + 1) begin
+                y[i] = (a == i);
+            end
+        end 
+        else begin
+            y = 32'b0;
+        end
+    end
+endmodule
