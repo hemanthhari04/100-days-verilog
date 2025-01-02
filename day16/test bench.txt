@@ -1,0 +1,25 @@
+module comparator4bit_tb;
+    reg [3:0] a;
+    reg [3:0] b;
+    wire greater, equal, less;
+
+    comparator4bit UUT (
+        .a(a),
+        .b(b),
+        .greater(greater),
+        .equal(equal),
+        .less(less)
+    );
+
+    initial begin
+      $dumpfile("dump.vcd");
+      $dumpvars;
+      $monitor("a=%b  b=%b grearter=%b  equal=%b less=%b",a,b,greater,equal,less);
+        a = 4'b0000; b = 4'b0000; #10;
+        a = 4'b0010; b = 4'b0001; #10;
+        a = 4'b0101; b = 4'b1010; #10;
+        a = 4'b1111; b = 4'b1111; #10;
+        a = 4'b1000; b = 4'b0111; #10;
+        $finish;
+    end
+endmodule
