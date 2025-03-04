@@ -1,0 +1,513 @@
+# KERNEL: a= 0 b= 0 cin=0 s= 0,cout=0
+# KERNEL: a= 0 b= 0 cin=1 s= 1,cout=0
+# KERNEL: a= 0 b= 1 cin=0 s= 1,cout=0
+# KERNEL: invalid condition at a= 0 b= 1 and c=1 result is  6 
+# KERNEL: a= 0 b= 2 cin=0 s= 2,cout=0
+# KERNEL: a= 0 b= 2 cin=1 s= 3,cout=0
+# KERNEL: a= 0 b= 3 cin=0 s= 3,cout=0
+# KERNEL: a= 0 b= 3 cin=1 s= 4,cout=0
+# KERNEL: a= 0 b= 4 cin=0 s= 4,cout=0
+# KERNEL: a= 0 b= 4 cin=1 s= 5,cout=0
+# KERNEL: a= 0 b= 5 cin=0 s= 5,cout=0
+# KERNEL: invalid condition at a= 0 b= 5 and c=1 result is 10 
+# KERNEL: a= 0 b= 6 cin=0 s= 6,cout=0
+# KERNEL: a= 0 b= 6 cin=1 s= 7,cout=0
+# KERNEL: a= 0 b= 7 cin=0 s= 7,cout=0
+# KERNEL: a= 0 b= 7 cin=1 s= 8,cout=0
+# KERNEL: a= 0 b= 8 cin=0 s= 8,cout=0
+# KERNEL: a= 0 b= 8 cin=1 s= 9,cout=0
+# KERNEL: a= 0 b= 9 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 0 b= 9 and c=1 result is 14 
+# KERNEL: a= 0 b=10 cin=0 s=10,cout=0
+# KERNEL: a= 0 b=10 cin=1 s=11,cout=0
+# KERNEL: a= 0 b=11 cin=0 s=11,cout=0
+# KERNEL: a= 0 b=11 cin=1 s=12,cout=0
+# KERNEL: a= 0 b=12 cin=0 s=12,cout=0
+# KERNEL: a= 0 b=12 cin=1 s=13,cout=0
+# KERNEL: a= 0 b=13 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 0 b=13 and c=1 result is 18 
+# KERNEL: a= 0 b=14 cin=0 s=14,cout=0
+# KERNEL: a= 0 b=14 cin=1 s=15,cout=0
+# KERNEL: a= 0 b=15 cin=0 s=15,cout=0
+# KERNEL: a= 0 b=15 cin=1 s= 0,cout=1
+# KERNEL: a= 1 b= 0 cin=0 s= 1,cout=0
+# KERNEL: invalid condition at a= 1 b= 0 and c=1 result is  6 
+# KERNEL: invalid condition at a= 1 b= 1 and c=0 result is  6 
+# KERNEL: invalid condition at a= 1 b= 1 and c=1 result is  7 
+# KERNEL: a= 1 b= 2 cin=0 s= 3,cout=0
+# KERNEL: a= 1 b= 2 cin=1 s= 4,cout=0
+# KERNEL: a= 1 b= 3 cin=0 s= 4,cout=0
+# KERNEL: a= 1 b= 3 cin=1 s= 5,cout=0
+# KERNEL: a= 1 b= 4 cin=0 s= 5,cout=0
+# KERNEL: invalid condition at a= 1 b= 4 and c=1 result is 10 
+# KERNEL: invalid condition at a= 1 b= 5 and c=0 result is 10 
+# KERNEL: invalid condition at a= 1 b= 5 and c=1 result is 11 
+# KERNEL: a= 1 b= 6 cin=0 s= 7,cout=0
+# KERNEL: a= 1 b= 6 cin=1 s= 8,cout=0
+# KERNEL: a= 1 b= 7 cin=0 s= 8,cout=0
+# KERNEL: a= 1 b= 7 cin=1 s= 9,cout=0
+# KERNEL: a= 1 b= 8 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 1 b= 8 and c=1 result is 14 
+# KERNEL: invalid condition at a= 1 b= 9 and c=0 result is 14 
+# KERNEL: invalid condition at a= 1 b= 9 and c=1 result is 15 
+# KERNEL: a= 1 b=10 cin=0 s=11,cout=0
+# KERNEL: a= 1 b=10 cin=1 s=12,cout=0
+# KERNEL: a= 1 b=11 cin=0 s=12,cout=0
+# KERNEL: a= 1 b=11 cin=1 s=13,cout=0
+# KERNEL: a= 1 b=12 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 1 b=12 and c=1 result is 18 
+# KERNEL: invalid condition at a= 1 b=13 and c=0 result is 18 
+# KERNEL: invalid condition at a= 1 b=13 and c=1 result is 19 
+# KERNEL: a= 1 b=14 cin=0 s=15,cout=0
+# KERNEL: a= 1 b=14 cin=1 s= 0,cout=1
+# KERNEL: a= 1 b=15 cin=0 s= 0,cout=1
+# KERNEL: a= 1 b=15 cin=1 s= 1,cout=1
+# KERNEL: a= 2 b= 0 cin=0 s= 2,cout=0
+# KERNEL: a= 2 b= 0 cin=1 s= 3,cout=0
+# KERNEL: a= 2 b= 1 cin=0 s= 3,cout=0
+# KERNEL: a= 2 b= 1 cin=1 s= 4,cout=0
+# KERNEL: invalid condition at a= 2 b= 2 and c=0 result is  0 
+# KERNEL: invalid condition at a= 2 b= 2 and c=1 result is  1 
+# KERNEL: invalid condition at a= 2 b= 3 and c=0 result is  1 
+# KERNEL: a= 2 b= 3 cin=1 s= 6,cout=0
+# KERNEL: a= 2 b= 4 cin=0 s= 6,cout=0
+# KERNEL: a= 2 b= 4 cin=1 s= 7,cout=0
+# KERNEL: a= 2 b= 5 cin=0 s= 7,cout=0
+# KERNEL: a= 2 b= 5 cin=1 s= 8,cout=0
+# KERNEL: invalid condition at a= 2 b= 6 and c=0 result is  4 
+# KERNEL: invalid condition at a= 2 b= 6 and c=1 result is  5 
+# KERNEL: invalid condition at a= 2 b= 7 and c=0 result is  5 
+# KERNEL: a= 2 b= 7 cin=1 s=10,cout=0
+# KERNEL: a= 2 b= 8 cin=0 s=10,cout=0
+# KERNEL: a= 2 b= 8 cin=1 s=11,cout=0
+# KERNEL: a= 2 b= 9 cin=0 s=11,cout=0
+# KERNEL: a= 2 b= 9 cin=1 s=12,cout=0
+# KERNEL: invalid condition at a= 2 b=10 and c=0 result is  8 
+# KERNEL: invalid condition at a= 2 b=10 and c=1 result is  9 
+# KERNEL: invalid condition at a= 2 b=11 and c=0 result is  9 
+# KERNEL: a= 2 b=11 cin=1 s=14,cout=0
+# KERNEL: a= 2 b=12 cin=0 s=14,cout=0
+# KERNEL: a= 2 b=12 cin=1 s=15,cout=0
+# KERNEL: a= 2 b=13 cin=0 s=15,cout=0
+# KERNEL: a= 2 b=13 cin=1 s= 0,cout=1
+# KERNEL: invalid condition at a= 2 b=14 and c=0 result is 12 
+# KERNEL: invalid condition at a= 2 b=14 and c=1 result is 13 
+# KERNEL: invalid condition at a= 2 b=15 and c=0 result is 13 
+# KERNEL: a= 2 b=15 cin=1 s= 2,cout=1
+# KERNEL: a= 3 b= 0 cin=0 s= 3,cout=0
+# KERNEL: a= 3 b= 0 cin=1 s= 4,cout=0
+# KERNEL: a= 3 b= 1 cin=0 s= 4,cout=0
+# KERNEL: a= 3 b= 1 cin=1 s= 5,cout=0
+# KERNEL: invalid condition at a= 3 b= 2 and c=0 result is  1 
+# KERNEL: a= 3 b= 2 cin=1 s= 6,cout=0
+# KERNEL: a= 3 b= 3 cin=0 s= 6,cout=0
+# KERNEL: a= 3 b= 3 cin=1 s= 7,cout=0
+# KERNEL: a= 3 b= 4 cin=0 s= 7,cout=0
+# KERNEL: a= 3 b= 4 cin=1 s= 8,cout=0
+# KERNEL: a= 3 b= 5 cin=0 s= 8,cout=0
+# KERNEL: a= 3 b= 5 cin=1 s= 9,cout=0
+# KERNEL: invalid condition at a= 3 b= 6 and c=0 result is  5 
+# KERNEL: a= 3 b= 6 cin=1 s=10,cout=0
+# KERNEL: a= 3 b= 7 cin=0 s=10,cout=0
+# KERNEL: a= 3 b= 7 cin=1 s=11,cout=0
+# KERNEL: a= 3 b= 8 cin=0 s=11,cout=0
+# KERNEL: a= 3 b= 8 cin=1 s=12,cout=0
+# KERNEL: a= 3 b= 9 cin=0 s=12,cout=0
+# KERNEL: a= 3 b= 9 cin=1 s=13,cout=0
+# KERNEL: invalid condition at a= 3 b=10 and c=0 result is  9 
+# KERNEL: a= 3 b=10 cin=1 s=14,cout=0
+# KERNEL: a= 3 b=11 cin=0 s=14,cout=0
+# KERNEL: a= 3 b=11 cin=1 s=15,cout=0
+# KERNEL: a= 3 b=12 cin=0 s=15,cout=0
+# KERNEL: a= 3 b=12 cin=1 s= 0,cout=1
+# KERNEL: a= 3 b=13 cin=0 s= 0,cout=1
+# KERNEL: a= 3 b=13 cin=1 s= 1,cout=1
+# KERNEL: invalid condition at a= 3 b=14 and c=0 result is 13 
+# KERNEL: a= 3 b=14 cin=1 s= 2,cout=1
+# KERNEL: a= 3 b=15 cin=0 s= 2,cout=1
+# KERNEL: a= 3 b=15 cin=1 s= 3,cout=1
+# KERNEL: a= 4 b= 0 cin=0 s= 4,cout=0
+# KERNEL: a= 4 b= 0 cin=1 s= 5,cout=0
+# KERNEL: a= 4 b= 1 cin=0 s= 5,cout=0
+# KERNEL: invalid condition at a= 4 b= 1 and c=1 result is 10 
+# KERNEL: a= 4 b= 2 cin=0 s= 6,cout=0
+# KERNEL: a= 4 b= 2 cin=1 s= 7,cout=0
+# KERNEL: a= 4 b= 3 cin=0 s= 7,cout=0
+# KERNEL: a= 4 b= 3 cin=1 s= 8,cout=0
+# KERNEL: a= 4 b= 4 cin=0 s= 8,cout=0
+# KERNEL: a= 4 b= 4 cin=1 s= 9,cout=0
+# KERNEL: a= 4 b= 5 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 4 b= 5 and c=1 result is 14 
+# KERNEL: a= 4 b= 6 cin=0 s=10,cout=0
+# KERNEL: a= 4 b= 6 cin=1 s=11,cout=0
+# KERNEL: a= 4 b= 7 cin=0 s=11,cout=0
+# KERNEL: a= 4 b= 7 cin=1 s=12,cout=0
+# KERNEL: a= 4 b= 8 cin=0 s=12,cout=0
+# KERNEL: a= 4 b= 8 cin=1 s=13,cout=0
+# KERNEL: a= 4 b= 9 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 4 b= 9 and c=1 result is 18 
+# KERNEL: a= 4 b=10 cin=0 s=14,cout=0
+# KERNEL: a= 4 b=10 cin=1 s=15,cout=0
+# KERNEL: a= 4 b=11 cin=0 s=15,cout=0
+# KERNEL: a= 4 b=11 cin=1 s= 0,cout=1
+# KERNEL: a= 4 b=12 cin=0 s= 0,cout=1
+# KERNEL: a= 4 b=12 cin=1 s= 1,cout=1
+# KERNEL: a= 4 b=13 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a= 4 b=13 and c=1 result is 22 
+# KERNEL: a= 4 b=14 cin=0 s= 2,cout=1
+# KERNEL: a= 4 b=14 cin=1 s= 3,cout=1
+# KERNEL: a= 4 b=15 cin=0 s= 3,cout=1
+# KERNEL: a= 4 b=15 cin=1 s= 4,cout=1
+# KERNEL: a= 5 b= 0 cin=0 s= 5,cout=0
+# KERNEL: invalid condition at a= 5 b= 0 and c=1 result is 10 
+# KERNEL: invalid condition at a= 5 b= 1 and c=0 result is 10 
+# KERNEL: invalid condition at a= 5 b= 1 and c=1 result is 11 
+# KERNEL: a= 5 b= 2 cin=0 s= 7,cout=0
+# KERNEL: a= 5 b= 2 cin=1 s= 8,cout=0
+# KERNEL: a= 5 b= 3 cin=0 s= 8,cout=0
+# KERNEL: a= 5 b= 3 cin=1 s= 9,cout=0
+# KERNEL: a= 5 b= 4 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 5 b= 4 and c=1 result is 14 
+# KERNEL: invalid condition at a= 5 b= 5 and c=0 result is 14 
+# KERNEL: invalid condition at a= 5 b= 5 and c=1 result is 15 
+# KERNEL: a= 5 b= 6 cin=0 s=11,cout=0
+# KERNEL: a= 5 b= 6 cin=1 s=12,cout=0
+# KERNEL: a= 5 b= 7 cin=0 s=12,cout=0
+# KERNEL: a= 5 b= 7 cin=1 s=13,cout=0
+# KERNEL: a= 5 b= 8 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 5 b= 8 and c=1 result is 18 
+# KERNEL: invalid condition at a= 5 b= 9 and c=0 result is 18 
+# KERNEL: invalid condition at a= 5 b= 9 and c=1 result is 19 
+# KERNEL: a= 5 b=10 cin=0 s=15,cout=0
+# KERNEL: a= 5 b=10 cin=1 s= 0,cout=1
+# KERNEL: a= 5 b=11 cin=0 s= 0,cout=1
+# KERNEL: a= 5 b=11 cin=1 s= 1,cout=1
+# KERNEL: a= 5 b=12 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a= 5 b=12 and c=1 result is 22 
+# KERNEL: invalid condition at a= 5 b=13 and c=0 result is 22 
+# KERNEL: invalid condition at a= 5 b=13 and c=1 result is 23 
+# KERNEL: a= 5 b=14 cin=0 s= 3,cout=1
+# KERNEL: a= 5 b=14 cin=1 s= 4,cout=1
+# KERNEL: a= 5 b=15 cin=0 s= 4,cout=1
+# KERNEL: a= 5 b=15 cin=1 s= 5,cout=1
+# KERNEL: a= 6 b= 0 cin=0 s= 6,cout=0
+# KERNEL: a= 6 b= 0 cin=1 s= 7,cout=0
+# KERNEL: a= 6 b= 1 cin=0 s= 7,cout=0
+# KERNEL: a= 6 b= 1 cin=1 s= 8,cout=0
+# KERNEL: invalid condition at a= 6 b= 2 and c=0 result is  4 
+# KERNEL: invalid condition at a= 6 b= 2 and c=1 result is  5 
+# KERNEL: invalid condition at a= 6 b= 3 and c=0 result is  5 
+# KERNEL: a= 6 b= 3 cin=1 s=10,cout=0
+# KERNEL: a= 6 b= 4 cin=0 s=10,cout=0
+# KERNEL: a= 6 b= 4 cin=1 s=11,cout=0
+# KERNEL: a= 6 b= 5 cin=0 s=11,cout=0
+# KERNEL: a= 6 b= 5 cin=1 s=12,cout=0
+# KERNEL: invalid condition at a= 6 b= 6 and c=0 result is  8 
+# KERNEL: invalid condition at a= 6 b= 6 and c=1 result is  9 
+# KERNEL: invalid condition at a= 6 b= 7 and c=0 result is  9 
+# KERNEL: a= 6 b= 7 cin=1 s=14,cout=0
+# KERNEL: a= 6 b= 8 cin=0 s=14,cout=0
+# KERNEL: a= 6 b= 8 cin=1 s=15,cout=0
+# KERNEL: a= 6 b= 9 cin=0 s=15,cout=0
+# KERNEL: a= 6 b= 9 cin=1 s= 0,cout=1
+# KERNEL: invalid condition at a= 6 b=10 and c=0 result is 12 
+# KERNEL: invalid condition at a= 6 b=10 and c=1 result is 13 
+# KERNEL: invalid condition at a= 6 b=11 and c=0 result is 13 
+# KERNEL: a= 6 b=11 cin=1 s= 2,cout=1
+# KERNEL: a= 6 b=12 cin=0 s= 2,cout=1
+# KERNEL: a= 6 b=12 cin=1 s= 3,cout=1
+# KERNEL: a= 6 b=13 cin=0 s= 3,cout=1
+# KERNEL: a= 6 b=13 cin=1 s= 4,cout=1
+# KERNEL: invalid condition at a= 6 b=14 and c=0 result is 16 
+# KERNEL: invalid condition at a= 6 b=14 and c=1 result is 17 
+# KERNEL: invalid condition at a= 6 b=15 and c=0 result is 17 
+# KERNEL: a= 6 b=15 cin=1 s= 6,cout=1
+# KERNEL: a= 7 b= 0 cin=0 s= 7,cout=0
+# KERNEL: a= 7 b= 0 cin=1 s= 8,cout=0
+# KERNEL: a= 7 b= 1 cin=0 s= 8,cout=0
+# KERNEL: a= 7 b= 1 cin=1 s= 9,cout=0
+# KERNEL: invalid condition at a= 7 b= 2 and c=0 result is  5 
+# KERNEL: a= 7 b= 2 cin=1 s=10,cout=0
+# KERNEL: a= 7 b= 3 cin=0 s=10,cout=0
+# KERNEL: a= 7 b= 3 cin=1 s=11,cout=0
+# KERNEL: a= 7 b= 4 cin=0 s=11,cout=0
+# KERNEL: a= 7 b= 4 cin=1 s=12,cout=0
+# KERNEL: a= 7 b= 5 cin=0 s=12,cout=0
+# KERNEL: a= 7 b= 5 cin=1 s=13,cout=0
+# KERNEL: invalid condition at a= 7 b= 6 and c=0 result is  9 
+# KERNEL: a= 7 b= 6 cin=1 s=14,cout=0
+# KERNEL: a= 7 b= 7 cin=0 s=14,cout=0
+# KERNEL: a= 7 b= 7 cin=1 s=15,cout=0
+# KERNEL: a= 7 b= 8 cin=0 s=15,cout=0
+# KERNEL: a= 7 b= 8 cin=1 s= 0,cout=1
+# KERNEL: a= 7 b= 9 cin=0 s= 0,cout=1
+# KERNEL: a= 7 b= 9 cin=1 s= 1,cout=1
+# KERNEL: invalid condition at a= 7 b=10 and c=0 result is 13 
+# KERNEL: a= 7 b=10 cin=1 s= 2,cout=1
+# KERNEL: a= 7 b=11 cin=0 s= 2,cout=1
+# KERNEL: a= 7 b=11 cin=1 s= 3,cout=1
+# KERNEL: a= 7 b=12 cin=0 s= 3,cout=1
+# KERNEL: a= 7 b=12 cin=1 s= 4,cout=1
+# KERNEL: a= 7 b=13 cin=0 s= 4,cout=1
+# KERNEL: a= 7 b=13 cin=1 s= 5,cout=1
+# KERNEL: invalid condition at a= 7 b=14 and c=0 result is 17 
+# KERNEL: a= 7 b=14 cin=1 s= 6,cout=1
+# KERNEL: a= 7 b=15 cin=0 s= 6,cout=1
+# KERNEL: a= 7 b=15 cin=1 s= 7,cout=1
+# KERNEL: a= 8 b= 0 cin=0 s= 8,cout=0
+# KERNEL: a= 8 b= 0 cin=1 s= 9,cout=0
+# KERNEL: a= 8 b= 1 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 8 b= 1 and c=1 result is 14 
+# KERNEL: a= 8 b= 2 cin=0 s=10,cout=0
+# KERNEL: a= 8 b= 2 cin=1 s=11,cout=0
+# KERNEL: a= 8 b= 3 cin=0 s=11,cout=0
+# KERNEL: a= 8 b= 3 cin=1 s=12,cout=0
+# KERNEL: a= 8 b= 4 cin=0 s=12,cout=0
+# KERNEL: a= 8 b= 4 cin=1 s=13,cout=0
+# KERNEL: a= 8 b= 5 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 8 b= 5 and c=1 result is 18 
+# KERNEL: a= 8 b= 6 cin=0 s=14,cout=0
+# KERNEL: a= 8 b= 6 cin=1 s=15,cout=0
+# KERNEL: a= 8 b= 7 cin=0 s=15,cout=0
+# KERNEL: a= 8 b= 7 cin=1 s= 0,cout=1
+# KERNEL: a= 8 b= 8 cin=0 s= 0,cout=1
+# KERNEL: a= 8 b= 8 cin=1 s= 1,cout=1
+# KERNEL: a= 8 b= 9 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a= 8 b= 9 and c=1 result is 22 
+# KERNEL: a= 8 b=10 cin=0 s= 2,cout=1
+# KERNEL: a= 8 b=10 cin=1 s= 3,cout=1
+# KERNEL: a= 8 b=11 cin=0 s= 3,cout=1
+# KERNEL: a= 8 b=11 cin=1 s= 4,cout=1
+# KERNEL: a= 8 b=12 cin=0 s= 4,cout=1
+# KERNEL: a= 8 b=12 cin=1 s= 5,cout=1
+# KERNEL: a= 8 b=13 cin=0 s= 5,cout=1
+# KERNEL: invalid condition at a= 8 b=13 and c=1 result is 26 
+# KERNEL: a= 8 b=14 cin=0 s= 6,cout=1
+# KERNEL: a= 8 b=14 cin=1 s= 7,cout=1
+# KERNEL: a= 8 b=15 cin=0 s= 7,cout=1
+# KERNEL: a= 8 b=15 cin=1 s= 8,cout=1
+# KERNEL: a= 9 b= 0 cin=0 s= 9,cout=0
+# KERNEL: invalid condition at a= 9 b= 0 and c=1 result is 14 
+# KERNEL: invalid condition at a= 9 b= 1 and c=0 result is 14 
+# KERNEL: invalid condition at a= 9 b= 1 and c=1 result is 15 
+# KERNEL: a= 9 b= 2 cin=0 s=11,cout=0
+# KERNEL: a= 9 b= 2 cin=1 s=12,cout=0
+# KERNEL: a= 9 b= 3 cin=0 s=12,cout=0
+# KERNEL: a= 9 b= 3 cin=1 s=13,cout=0
+# KERNEL: a= 9 b= 4 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a= 9 b= 4 and c=1 result is 18 
+# KERNEL: invalid condition at a= 9 b= 5 and c=0 result is 18 
+# KERNEL: invalid condition at a= 9 b= 5 and c=1 result is 19 
+# KERNEL: a= 9 b= 6 cin=0 s=15,cout=0
+# KERNEL: a= 9 b= 6 cin=1 s= 0,cout=1
+# KERNEL: a= 9 b= 7 cin=0 s= 0,cout=1
+# KERNEL: a= 9 b= 7 cin=1 s= 1,cout=1
+# KERNEL: a= 9 b= 8 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a= 9 b= 8 and c=1 result is 22 
+# KERNEL: invalid condition at a= 9 b= 9 and c=0 result is 22 
+# KERNEL: invalid condition at a= 9 b= 9 and c=1 result is 23 
+# KERNEL: a= 9 b=10 cin=0 s= 3,cout=1
+# KERNEL: a= 9 b=10 cin=1 s= 4,cout=1
+# KERNEL: a= 9 b=11 cin=0 s= 4,cout=1
+# KERNEL: a= 9 b=11 cin=1 s= 5,cout=1
+# KERNEL: a= 9 b=12 cin=0 s= 5,cout=1
+# KERNEL: invalid condition at a= 9 b=12 and c=1 result is 26 
+# KERNEL: invalid condition at a= 9 b=13 and c=0 result is 26 
+# KERNEL: invalid condition at a= 9 b=13 and c=1 result is 27 
+# KERNEL: a= 9 b=14 cin=0 s= 7,cout=1
+# KERNEL: a= 9 b=14 cin=1 s= 8,cout=1
+# KERNEL: a= 9 b=15 cin=0 s= 8,cout=1
+# KERNEL: a= 9 b=15 cin=1 s= 9,cout=1
+# KERNEL: a=10 b= 0 cin=0 s=10,cout=0
+# KERNEL: a=10 b= 0 cin=1 s=11,cout=0
+# KERNEL: a=10 b= 1 cin=0 s=11,cout=0
+# KERNEL: a=10 b= 1 cin=1 s=12,cout=0
+# KERNEL: invalid condition at a=10 b= 2 and c=0 result is  8 
+# KERNEL: invalid condition at a=10 b= 2 and c=1 result is  9 
+# KERNEL: invalid condition at a=10 b= 3 and c=0 result is  9 
+# KERNEL: a=10 b= 3 cin=1 s=14,cout=0
+# KERNEL: a=10 b= 4 cin=0 s=14,cout=0
+# KERNEL: a=10 b= 4 cin=1 s=15,cout=0
+# KERNEL: a=10 b= 5 cin=0 s=15,cout=0
+# KERNEL: a=10 b= 5 cin=1 s= 0,cout=1
+# KERNEL: invalid condition at a=10 b= 6 and c=0 result is 12 
+# KERNEL: invalid condition at a=10 b= 6 and c=1 result is 13 
+# KERNEL: invalid condition at a=10 b= 7 and c=0 result is 13 
+# KERNEL: a=10 b= 7 cin=1 s= 2,cout=1
+# KERNEL: a=10 b= 8 cin=0 s= 2,cout=1
+# KERNEL: a=10 b= 8 cin=1 s= 3,cout=1
+# KERNEL: a=10 b= 9 cin=0 s= 3,cout=1
+# KERNEL: a=10 b= 9 cin=1 s= 4,cout=1
+# KERNEL: invalid condition at a=10 b=10 and c=0 result is 16 
+# KERNEL: invalid condition at a=10 b=10 and c=1 result is 17 
+# KERNEL: invalid condition at a=10 b=11 and c=0 result is 17 
+# KERNEL: a=10 b=11 cin=1 s= 6,cout=1
+# KERNEL: a=10 b=12 cin=0 s= 6,cout=1
+# KERNEL: a=10 b=12 cin=1 s= 7,cout=1
+# KERNEL: a=10 b=13 cin=0 s= 7,cout=1
+# KERNEL: a=10 b=13 cin=1 s= 8,cout=1
+# KERNEL: invalid condition at a=10 b=14 and c=0 result is 20 
+# KERNEL: invalid condition at a=10 b=14 and c=1 result is 21 
+# KERNEL: invalid condition at a=10 b=15 and c=0 result is 21 
+# KERNEL: a=10 b=15 cin=1 s=10,cout=1
+# KERNEL: a=11 b= 0 cin=0 s=11,cout=0
+# KERNEL: a=11 b= 0 cin=1 s=12,cout=0
+# KERNEL: a=11 b= 1 cin=0 s=12,cout=0
+# KERNEL: a=11 b= 1 cin=1 s=13,cout=0
+# KERNEL: invalid condition at a=11 b= 2 and c=0 result is  9 
+# KERNEL: a=11 b= 2 cin=1 s=14,cout=0
+# KERNEL: a=11 b= 3 cin=0 s=14,cout=0
+# KERNEL: a=11 b= 3 cin=1 s=15,cout=0
+# KERNEL: a=11 b= 4 cin=0 s=15,cout=0
+# KERNEL: a=11 b= 4 cin=1 s= 0,cout=1
+# KERNEL: a=11 b= 5 cin=0 s= 0,cout=1
+# KERNEL: a=11 b= 5 cin=1 s= 1,cout=1
+# KERNEL: invalid condition at a=11 b= 6 and c=0 result is 13 
+# KERNEL: a=11 b= 6 cin=1 s= 2,cout=1
+# KERNEL: a=11 b= 7 cin=0 s= 2,cout=1
+# KERNEL: a=11 b= 7 cin=1 s= 3,cout=1
+# KERNEL: a=11 b= 8 cin=0 s= 3,cout=1
+# KERNEL: a=11 b= 8 cin=1 s= 4,cout=1
+# KERNEL: a=11 b= 9 cin=0 s= 4,cout=1
+# KERNEL: a=11 b= 9 cin=1 s= 5,cout=1
+# KERNEL: invalid condition at a=11 b=10 and c=0 result is 17 
+# KERNEL: a=11 b=10 cin=1 s= 6,cout=1
+# KERNEL: a=11 b=11 cin=0 s= 6,cout=1
+# KERNEL: a=11 b=11 cin=1 s= 7,cout=1
+# KERNEL: a=11 b=12 cin=0 s= 7,cout=1
+# KERNEL: a=11 b=12 cin=1 s= 8,cout=1
+# KERNEL: a=11 b=13 cin=0 s= 8,cout=1
+# KERNEL: a=11 b=13 cin=1 s= 9,cout=1
+# KERNEL: invalid condition at a=11 b=14 and c=0 result is 21 
+# KERNEL: a=11 b=14 cin=1 s=10,cout=1
+# KERNEL: a=11 b=15 cin=0 s=10,cout=1
+# KERNEL: a=11 b=15 cin=1 s=11,cout=1
+# KERNEL: a=12 b= 0 cin=0 s=12,cout=0
+# KERNEL: a=12 b= 0 cin=1 s=13,cout=0
+# KERNEL: a=12 b= 1 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a=12 b= 1 and c=1 result is 18 
+# KERNEL: a=12 b= 2 cin=0 s=14,cout=0
+# KERNEL: a=12 b= 2 cin=1 s=15,cout=0
+# KERNEL: a=12 b= 3 cin=0 s=15,cout=0
+# KERNEL: a=12 b= 3 cin=1 s= 0,cout=1
+# KERNEL: a=12 b= 4 cin=0 s= 0,cout=1
+# KERNEL: a=12 b= 4 cin=1 s= 1,cout=1
+# KERNEL: a=12 b= 5 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a=12 b= 5 and c=1 result is 22 
+# KERNEL: a=12 b= 6 cin=0 s= 2,cout=1
+# KERNEL: a=12 b= 6 cin=1 s= 3,cout=1
+# KERNEL: a=12 b= 7 cin=0 s= 3,cout=1
+# KERNEL: a=12 b= 7 cin=1 s= 4,cout=1
+# KERNEL: a=12 b= 8 cin=0 s= 4,cout=1
+# KERNEL: a=12 b= 8 cin=1 s= 5,cout=1
+# KERNEL: a=12 b= 9 cin=0 s= 5,cout=1
+# KERNEL: invalid condition at a=12 b= 9 and c=1 result is 26 
+# KERNEL: a=12 b=10 cin=0 s= 6,cout=1
+# KERNEL: a=12 b=10 cin=1 s= 7,cout=1
+# KERNEL: a=12 b=11 cin=0 s= 7,cout=1
+# KERNEL: a=12 b=11 cin=1 s= 8,cout=1
+# KERNEL: a=12 b=12 cin=0 s= 8,cout=1
+# KERNEL: a=12 b=12 cin=1 s= 9,cout=1
+# KERNEL: a=12 b=13 cin=0 s= 9,cout=1
+# KERNEL: invalid condition at a=12 b=13 and c=1 result is 30 
+# KERNEL: a=12 b=14 cin=0 s=10,cout=1
+# KERNEL: a=12 b=14 cin=1 s=11,cout=1
+# KERNEL: a=12 b=15 cin=0 s=11,cout=1
+# KERNEL: a=12 b=15 cin=1 s=12,cout=1
+# KERNEL: a=13 b= 0 cin=0 s=13,cout=0
+# KERNEL: invalid condition at a=13 b= 0 and c=1 result is 18 
+# KERNEL: invalid condition at a=13 b= 1 and c=0 result is 18 
+# KERNEL: invalid condition at a=13 b= 1 and c=1 result is 19 
+# KERNEL: a=13 b= 2 cin=0 s=15,cout=0
+# KERNEL: a=13 b= 2 cin=1 s= 0,cout=1
+# KERNEL: a=13 b= 3 cin=0 s= 0,cout=1
+# KERNEL: a=13 b= 3 cin=1 s= 1,cout=1
+# KERNEL: a=13 b= 4 cin=0 s= 1,cout=1
+# KERNEL: invalid condition at a=13 b= 4 and c=1 result is 22 
+# KERNEL: invalid condition at a=13 b= 5 and c=0 result is 22 
+# KERNEL: invalid condition at a=13 b= 5 and c=1 result is 23 
+# KERNEL: a=13 b= 6 cin=0 s= 3,cout=1
+# KERNEL: a=13 b= 6 cin=1 s= 4,cout=1
+# KERNEL: a=13 b= 7 cin=0 s= 4,cout=1
+# KERNEL: a=13 b= 7 cin=1 s= 5,cout=1
+# KERNEL: a=13 b= 8 cin=0 s= 5,cout=1
+# KERNEL: invalid condition at a=13 b= 8 and c=1 result is 26 
+# KERNEL: invalid condition at a=13 b= 9 and c=0 result is 26 
+# KERNEL: invalid condition at a=13 b= 9 and c=1 result is 27 
+# KERNEL: a=13 b=10 cin=0 s= 7,cout=1
+# KERNEL: a=13 b=10 cin=1 s= 8,cout=1
+# KERNEL: a=13 b=11 cin=0 s= 8,cout=1
+# KERNEL: a=13 b=11 cin=1 s= 9,cout=1
+# KERNEL: a=13 b=12 cin=0 s= 9,cout=1
+# KERNEL: invalid condition at a=13 b=12 and c=1 result is 30 
+# KERNEL: invalid condition at a=13 b=13 and c=0 result is 30 
+# KERNEL: invalid condition at a=13 b=13 and c=1 result is 31 
+# KERNEL: a=13 b=14 cin=0 s=11,cout=1
+# KERNEL: a=13 b=14 cin=1 s=12,cout=1
+# KERNEL: a=13 b=15 cin=0 s=12,cout=1
+# KERNEL: a=13 b=15 cin=1 s=13,cout=1
+# KERNEL: a=14 b= 0 cin=0 s=14,cout=0
+# KERNEL: a=14 b= 0 cin=1 s=15,cout=0
+# KERNEL: a=14 b= 1 cin=0 s=15,cout=0
+# KERNEL: a=14 b= 1 cin=1 s= 0,cout=1
+# KERNEL: invalid condition at a=14 b= 2 and c=0 result is 12 
+# KERNEL: invalid condition at a=14 b= 2 and c=1 result is 13 
+# KERNEL: invalid condition at a=14 b= 3 and c=0 result is 13 
+# KERNEL: a=14 b= 3 cin=1 s= 2,cout=1
+# KERNEL: a=14 b= 4 cin=0 s= 2,cout=1
+# KERNEL: a=14 b= 4 cin=1 s= 3,cout=1
+# KERNEL: a=14 b= 5 cin=0 s= 3,cout=1
+# KERNEL: a=14 b= 5 cin=1 s= 4,cout=1
+# KERNEL: invalid condition at a=14 b= 6 and c=0 result is 16 
+# KERNEL: invalid condition at a=14 b= 6 and c=1 result is 17 
+# KERNEL: invalid condition at a=14 b= 7 and c=0 result is 17 
+# KERNEL: a=14 b= 7 cin=1 s= 6,cout=1
+# KERNEL: a=14 b= 8 cin=0 s= 6,cout=1
+# KERNEL: a=14 b= 8 cin=1 s= 7,cout=1
+# KERNEL: a=14 b= 9 cin=0 s= 7,cout=1
+# KERNEL: a=14 b= 9 cin=1 s= 8,cout=1
+# KERNEL: invalid condition at a=14 b=10 and c=0 result is 20 
+# KERNEL: invalid condition at a=14 b=10 and c=1 result is 21 
+# KERNEL: invalid condition at a=14 b=11 and c=0 result is 21 
+# KERNEL: a=14 b=11 cin=1 s=10,cout=1
+# KERNEL: a=14 b=12 cin=0 s=10,cout=1
+# KERNEL: a=14 b=12 cin=1 s=11,cout=1
+# KERNEL: a=14 b=13 cin=0 s=11,cout=1
+# KERNEL: a=14 b=13 cin=1 s=12,cout=1
+# KERNEL: invalid condition at a=14 b=14 and c=0 result is 24 
+# KERNEL: invalid condition at a=14 b=14 and c=1 result is 25 
+# KERNEL: invalid condition at a=14 b=15 and c=0 result is 25 
+# KERNEL: a=14 b=15 cin=1 s=14,cout=1
+# KERNEL: a=15 b= 0 cin=0 s=15,cout=0
+# KERNEL: a=15 b= 0 cin=1 s= 0,cout=1
+# KERNEL: a=15 b= 1 cin=0 s= 0,cout=1
+# KERNEL: a=15 b= 1 cin=1 s= 1,cout=1
+# KERNEL: invalid condition at a=15 b= 2 and c=0 result is 13 
+# KERNEL: a=15 b= 2 cin=1 s= 2,cout=1
+# KERNEL: a=15 b= 3 cin=0 s= 2,cout=1
+# KERNEL: a=15 b= 3 cin=1 s= 3,cout=1
+# KERNEL: a=15 b= 4 cin=0 s= 3,cout=1
+# KERNEL: a=15 b= 4 cin=1 s= 4,cout=1
+# KERNEL: a=15 b= 5 cin=0 s= 4,cout=1
+# KERNEL: a=15 b= 5 cin=1 s= 5,cout=1
+# KERNEL: invalid condition at a=15 b= 6 and c=0 result is 17 
+# KERNEL: a=15 b= 6 cin=1 s= 6,cout=1
+# KERNEL: a=15 b= 7 cin=0 s= 6,cout=1
+# KERNEL: a=15 b= 7 cin=1 s= 7,cout=1
+# KERNEL: a=15 b= 8 cin=0 s= 7,cout=1
+# KERNEL: a=15 b= 8 cin=1 s= 8,cout=1
+# KERNEL: a=15 b= 9 cin=0 s= 8,cout=1
+# KERNEL: a=15 b= 9 cin=1 s= 9,cout=1
+# KERNEL: invalid condition at a=15 b=10 and c=0 result is 21 
+# KERNEL: a=15 b=10 cin=1 s=10,cout=1
+# KERNEL: a=15 b=11 cin=0 s=10,cout=1
+# KERNEL: a=15 b=11 cin=1 s=11,cout=1
+# KERNEL: a=15 b=12 cin=0 s=11,cout=1
+# KERNEL: a=15 b=12 cin=1 s=12,cout=1
+# KERNEL: a=15 b=13 cin=0 s=12,cout=1
+# KERNEL: a=15 b=13 cin=1 s=13,cout=1
+# KERNEL: invalid condition at a=15 b=14 and c=0 result is 25 
+# KERNEL: a=15 b=14 cin=1 s=14,cout=1
+# KERNEL: a=15 b=15 cin=0 s=14,cout=1
+# KERNEL: a=15 b=15 cin=1 s=15,cout=1
+# KERNEL: true conditions=384  and false conditions=128 for total conditions=512
