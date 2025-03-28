@@ -1,0 +1,82 @@
+`timescale 1ns / 1ps
+module atm_controller (
+    input clk, reset, enter,
+    input [3:0] pin,
+    input [1:0] transaction_type,
+    input [7:0] amount,
+    output reg valid,
+    output reg [7:0] balance,
+    output reg [2:0] state
+);
+
+    parameter IDLE = 3'b000, ENTER_PIN = 3'b001, CHECK_PIN = 3'b010, 
+              SELECT_TRANSACTION = 3'b011, PROCESS = 3'b100, COMPLETE = 3'b101, ERROR = 3'b110;
+
+    reg [3:0] stored_pin [3:0];
+    reg [3:0] entered_pin [3:0];
+    reg [1:0] count;
+    reg [2:0] next_state;
+
+    initial begin
+        stored_pin[0] = 4'd1;
+        stored_pin[1] = 4'd2;
+        stored_pin[2] = 4'd3;
+        stored_pin[3] = 4'd4;
+        balance = 8'd100;
+    end
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            state <= IDLE;
+            count <= 0;
+        end else begin
+            state <= next_state;
+        end
+    end
+
+    always @(*) begin
+        case (state)
+            IDLE: if (enter) next_state = ENTER_PIN; else next_state = IDLE;
+            ENTER_PIN: if (count == 3) next_state = CHECK_PIN; else next_state = ENTER_PIN;
+            CHECK_PIN: if (valid) next_state = SELECT_TRANSACTION; else next_state = ERROR;
+            SELECT_TRANSACTION: next_state = PROCESS;
+            PROCESS: next_state = COMPLETE;
+            COMPLETE: next_state = IDLE;
+            ERROR: next_state = IDLE;
+            default: next_state = IDLE;
+        endcase
+    end
+
+    always @(posedge clk) begin
+        if (state == ENTER_PIN && enter) begin
+            entered_pin[count] <= pin;
+            count <= count + 1;
+        end
+    end
+
+    always @(*) begin
+        if (state == CHECK_PIN) begin
+            if (entered_pin[0] == stored_pin[0] &&
+                entered_pin[1] == stored_pin[1] &&
+                entered_pin[2] == stored_pin[2] &&
+                entered_pin[3] == stored_pin[3]) 
+            begin
+                valid = 1;
+            end else begin
+                valid = 0;
+            end
+        end
+    end
+
+    always @(posedge clk) begin
+        if (state == PROCESS) begin
+            case (transaction_type)
+                2'b00: balance <= balance;
+                2'b01: if (balance >= amount) balance <= balance - amount;
+                2'b10: balance <= balance + amount;
+            endcase
+        end
+    end
+
+endmodule
+
