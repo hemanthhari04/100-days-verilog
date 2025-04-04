@@ -1,0 +1,59 @@
+🌟 **Priority Encoder Optimization** — Carousel Post for LinkedIn
+
+---
+
+### 🎡 Slide 1: Intro
+**Binary Encoder vs Priority Encoder**  
+When multiple inputs can be active, a **Priority Encoder** is more reliable than a basic Binary Encoder.
+
+---
+
+### ⚖️ Slide 2: Binary Encoder (4:2)
+```verilog
+module binary_encoder(input [3:0] in, output [1:0] out);
+    assign out = (in[3]) ? 2'b11 :
+                 (in[2]) ? 2'b10 :
+                 (in[1]) ? 2'b01 :
+                 (in[0]) ? 2'b00 : 2'b00;
+endmodule
+```
+❌ Works only if **one input is active** at a time.
+❗ Multiple inputs = **undefined behavior**
+
+---
+
+### ✅ Slide 3: Priority Encoder (Synthesizable)
+```verilog
+module priority_encoder(input [3:0] in, output reg [1:0] out);
+    always @(*) begin
+        if (in[3]) out = 2'b11;
+        else if (in[2]) out = 2'b10;
+        else if (in[1]) out = 2'b01;
+        else if (in[0]) out = 2'b00;
+        else out = 2'b00;
+    end
+endmodule
+```
+✅ Always chooses the **highest-priority input**.
+
+---
+
+### 🔢 Slide 4: Hardware Impact
+| Metric       | Binary Encoder | Priority Encoder |
+|--------------|----------------|------------------|
+| Area         | ✅ Low         | ⚠ Slightly Higher |
+| Delay        | ⚠ Unpredictable | ✅ Predictable      |
+| Power        | ⚠ Can glitch | ✅ Stable           |
+| Use Case     | Basic logic    | Interrupts, Control units |
+
+---
+
+### 🔍 Slide 5: Key Takeaways
+- Use **Binary Encoder** for simple, one-hot inputs
+- Use **Priority Encoder** when multiple inputs may be active
+- Ensure **synthesizable logic** for real-world designs
+
+**Small change → More reliable system**
+
+#DigitalDesign #RTL #FPGA #Verilog #VLSI #PriorityEncoder #DesignOptimization
+
